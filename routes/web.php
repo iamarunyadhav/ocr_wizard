@@ -1,7 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Livewire\Wizard\Step1Upload;
+use App\Http\Controllers\ResumeWizardController;
 
-// web.php
-Route::get('/', \App\Http\Livewire\WizardContainer::class)->name('wizard.start');
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/resume', ResumeWizardController::class)->name('resume.wizard');

@@ -31,34 +31,8 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
-    'ocr' => [
-        'default' => env('OCR_SERVICE', 'tesseract'),
-    ],
-
-    'google_vision' => [
-        'credentials' => env('GOOGLE_VISION_CREDENTIALS'),
-    ],
-
-    'ai' => [
-        'default' => env('AI_SERVICE', 'gpt'),
-    ],
-
     'openai' => [
-        'api_key' => env('OPENAI_API_KEY'),
-    ],
-
-    'deepseek' => [
-        'api_key' => env('DEEPSEEK_API_KEY'),
-    ],
-
-    'default' => env('OCR_SERVICE', 'tesseract'),
-    'max_file_size' => env('OCR_MAX_FILE_SIZE', 10485760), // 10MB
-    'tesseract' => [
-        'languages' => ['eng'],
-        'psm' => 6,
-    ],
-    'google_vision' => [
-        'credentials_path' => env('GOOGLE_APPLICATION_CREDENTIALS'),
+        'key' => env('OPENAI_API_KEY'),
     ],
 
 ];
